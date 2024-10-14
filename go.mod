@@ -1,8 +1,11 @@
-module github.com/tonyfieit75/go-client-library-passwordsafe
+module your/module/path
 
 go 1.21.9
 
+toolchain go1.22.8
+
 require (
+	github.com/BeyondTrust/go-client-library-passwordsafe v0.6.0
 	github.com/cenkalti/backoff/v4 v4.3.0
 	github.com/go-logr/logr v1.4.1
 	github.com/go-playground/validator/v10 v10.19.0
@@ -20,3 +23,5 @@ require (
 	golang.org/x/sys v0.19.0 // indirect
 	golang.org/x/text v0.14.0 // indirect
 )
+
+replace github.com/BeyondTrust/go-client-library-passwordsafe => github.com/tonyfieit75/go-client-library-passwordsafe v0.0.1
